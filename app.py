@@ -5,10 +5,12 @@ import requests
 import json
 
 # Ask the user for their OpenAI API key
-openai.api_key = st.text_input("Enter your OpenAI API key:")
+openai.api_key = st.text_input("Enter your OpenAI API key:", type="password",
+                                       placeholder="Paste your OpenAI API key here (sk-...)")
 
 # Ask the user for their CSM API key
-csm_api_key = st.text_input("Enter your CSM API key:")
+csm_api_key = st.text_input("Enter your CSM API key:", type="password",
+                                       placeholder="Paste your CSA key here")
 
 # Initialize image_url and session_code
 image_url = ""
