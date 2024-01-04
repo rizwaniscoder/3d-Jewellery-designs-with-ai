@@ -3,7 +3,7 @@ import streamlit as st
 import openai
 import requests
 import json
-
+import os
 
 # Retrieve OpenAI API key from environment variable
 openai.api_key = os.getenv("OPENAI_API_KEY")
