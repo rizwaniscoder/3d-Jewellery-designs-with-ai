@@ -4,17 +4,13 @@ import openai
 import requests
 import json
 
-# Get OpenAI API key from environment variable
-openai.api_key = os.getenv("OPENAI_API_KEY", "")
-if not openai.api_key:
-    st.error("Please set the OPENAI_API_KEY environment variable.")
-    st.stop()
 
-# Get CSM API key from environment variable
-csm_api_key = os.getenv("CSM_API_KEY", "")
-if not csm_api_key:
-    st.error("Please set the CSM_API_KEY environment variable.")
-    st.stop()
+# Retrieve OpenAI API key from environment variable
+openai.api_key = os.getenv("OPENAI_API_KEY")
+
+# Retrieve CSM API key from environment variable
+csm_api_key = os.getenv("CSM_API_KEY")
+
   
 # Initialize image_url and session_code
 image_url = ""
