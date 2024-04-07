@@ -1,33 +1,75 @@
-**Automated Jewellery 3D Model Generator**
+# Automated Jewellery 3D Model Generator
 
-Welcome to the Automated Jewellery 3D Model Generator! This GitHub repository combines the creative power of OpenAI's GPT-3.5 Turbo and DALL·E 3 models along with the 3D modeling capabilities of the CSM API to bring your unique jewellery designs to life.
+This Streamlit application enables users to generate 3D models of jewellery designs automatically. It utilizes OpenAI's language models for generating image prompts and DALL·E 3 for image generation. Additionally, it integrates with the CSM API for 3D model generation.
 
-Prerequisites
-OpenAI API Key: Make sure you have your OpenAI API key set as an environment variable named OPENAI_API_KEY.
-CSM API Key: Set your CSM API key as an environment variable named CSM_API_KEY.
-Usage
-Step 1: Jewellery Image Prompt Generation
-Enter your prompt in the provided text input.
-Select styles for your jewellery design from the available options.
-Click the "Generate Prompt" button to create a tailored prompt for image generation.
-Step 2: DALL·E 3 Image Generation
-The generated prompt is automatically populated, or you can customize it further.
-Optionally, provide a custom image prompt for more control.
-Click the "Generate Image" button to see the magic happen.
-Step 3: 3D Model Generation with CSM
-The generated image or a custom image URL is automatically populated.
-Click the "Generate 3D Model" button to initiate the 3D model generation process.
-Sit back and relax while the CSM API works its magic.
-Once completed, the 3D model and related information will be displayed.
-Functions
-generate_jewellery_prompt(prompt)
-Generates a jewellery image prompt using GPT-3.5 Turbo.
+## Features
 
-generate_image(image_prompt)
-Generates an image using the DALL·E 3 model based on the provided prompt.
+- **Jewellery Image Prompt Generation**: Generate prompts for jewellery design images.
+- **DALL·E 3 Image Generation**: Generate jewellery design images using DALL·E 3 based on the provided prompts.
+- **3D Model Generation with CSM**: Generate 3D models of jewellery designs using the CSM API.
+- **Customization**: Customize prompts for image generation.
 
-generate_3d_model(image_url)
-Initiates the generation of a 3D model using the CSM API, given an image URL.
+## Prerequisites
 
-check_3d_model_status(session_code)
-Checks the status of 3D model generation and displays the result when completed.
+Before running the application, make sure you have the following:
+
+- Python installed on your machine
+- Streamlit library
+- OpenAI API key
+- CSM API key (for 3D model generation)
+
+## Installation
+
+1. **Clone the repository:**
+
+    ```bash
+    git clone https://github.com/your_username/automated-jewellery-3d-model-generator.git
+    ```
+
+2. **Navigate to the project directory:**
+
+    ```bash
+    cd automated-jewellery-3d-model-generator
+    ```
+
+3. **Install dependencies:**
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+## Usage
+
+1. **Run the application:**
+
+    ```bash
+    streamlit run main.py
+    ```
+
+2. **Access the application:**
+
+    Open your web browser and go to `http://localhost:8501`.
+
+3. **Provide API keys:**
+
+    - Enter your OpenAI API key and CSM API key in the provided text inputs.
+
+4. **Generate Jewellery Image Prompt:**
+
+    - Enter your prompt and select styles for the jewellery design.
+
+5. **Generate DALL·E 3 Image:**
+
+    - Click the "Generate Image" button to generate the jewellery design image based on the provided prompt.
+
+6. **Generate 3D Model with CSM:**
+
+    - Enter the image URL for 3D model generation and click the "Generate 3D Model" button.
+
+7. **Check 3D Model Status:**
+
+    - The application will check the status of 3D model generation and display the result once completed.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
