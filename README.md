@@ -1,6 +1,6 @@
 # Automated Jewellery 3D Model Generator
 
-![Image](presentation generator 1.png)
+![Image]('./presentation generator 1.png')
 
 This Streamlit application enables users to generate 3D models of jewellery designs automatically. It utilizes OpenAI's language models for generating image prompts and DALL·E 3 for image generation. Additionally, it integrates with the CSM API for 3D model generation.
 
